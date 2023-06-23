@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,400;0,600;1,400;1,600&display=swap');
+*{
+    font-family: 'Overpass', sans-serif;
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+:root{
+    --white:hsl(0, 0%, 100%);
+    --lightgrey: hsl(217, 12%, 63%);
+    --mediumgray:hsl(216, 12%, 54%);
+    --darkblue:hsl(213, 19%, 18%);
+    --verydarkblue:hsl(216, 12%, 8%);
+}
+body{
+    display: grid;
+    place-items: center;
+    background-color: var(--verydarkblue);
+    height: 100vh;
+    width: 100vw;
+}
+p{
+    font-size: 15px;
+    color: var(--lightgrey);
+}
+main{
+    width: 408px;
+    padding: 30px;
+    background-color: var(--darkblue);
+    border-radius: 30px;
+}
+.icon-star{
+    background: hsla(216, 12%, 54%, .1);
+    padding: 15px;
+    border-radius: 50%;
+}
+h2{
+    color: var(--white);
+    margin:30px 0px 25px 0px;
+}
+ul{
+    list-style: none;
+    text-align: center;
+    display: flex;
+    flex:nowrap;
+}
+li{
+    text-align: center;
+    /* padding: 10px 15px ; */
+    width: 50px;
+    height: 50px;
+    background-color:hsla(216, 12%, 54%, .1);
+    color: var(--lightgrey);
+    border-radius: 50%;
+    margin: 30px 20px 30px 0px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: nowrap;
+}
+li:hover{
+    background: #fc7613;
+    color: var(--white);
+    cursor:pointer;
+}
+.active{
+    background-color: var(--lightgrey);
+    color: var(--white);
+}
+.submit-btn{
+    cursor: pointer;
+    border: none;
+    color: var(--white);
+    background: #fc7613;
+    width: 340px;
+    height: 46px;
+    border-radius: 30px;
+    letter-spacing: 5px;
+}
+.submit-btn:hover{
+    background: var(--white);
+    color: #fc7613;
+}
+
+.submission_section{
+    /* text-align: center; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.ratingvalue{
+    background-color:hsla(216, 12%, 54%, .1);
+    color: #fc7613;
+    font-weight: 400;
+    padding: 5px 20px;
+    margin: 30px auto;
+    border-radius: 30px;
+}
+h1{
+    color: var(--white);
+    margin-bottom: 10px;
+}
